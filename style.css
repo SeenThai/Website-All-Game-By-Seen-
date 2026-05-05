@@ -1,6 +1,14 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    text-align: center;
+    user-select: none;
+}
+
+img {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
 }
 
 
@@ -16,15 +24,24 @@ body {
 
 
 #sidebar {
+    z-index: 999;
     position: fixed;
     top: 0;
-    left: -250px; 
+    left: -250px;
     width: 250px;
     height: 100%;
-    background: #333;
+    background: linear-gradient(to top, #7b2ff7, #1a1a1a, #000000);
     color: white;
     transition: 0.3s;
     padding-top: 60px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#sidebar a:hover {
+    font-size: 20px;
+    transition: 0.3s;
+    color: rgb(211, 105, 235);
 }
 
 
